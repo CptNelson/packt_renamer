@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FilenameFilter;
 
-public class Main
+public class RenamerMain
 {
     final static String workingDir = System.getProperty("user.dir");
 
