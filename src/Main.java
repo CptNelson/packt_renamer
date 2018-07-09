@@ -2,10 +2,12 @@ import java.io.File;
 
 public class Main
 {
+    final static String workingDir = System.getProperty("user.dir");
     public static void main(String[] args)
     {
+
         // create a File from the directory
-        File directory = new File("/path/to/directory");
+        File directory = new File(workingDir);
 
         // Create a File array from directory list
         File[] listOfFiles = directory.listFiles();
@@ -27,7 +29,7 @@ public class Main
     private static void RenameFiles(String names[], File dir[])
     {
         for (int i = 0; i < names.length;i++) {
-            dir[i].renameTo(new File("/path/to/directory/"+names[i]));
+            dir[i].renameTo(new File(workingDir + "/" + names[i]));
         }
     }
 
