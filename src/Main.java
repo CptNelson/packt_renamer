@@ -5,7 +5,7 @@ public class Main
     public static void main(String[] args)
     {
         // create a File from the directory
-        File directory = new File("/home/nelson/Documents/Books/programming/PacktPublishing");
+        File directory = new File("/path/to/directory");
 
         // Create a File array from directory list
         File[] listOfFiles = directory.listFiles();
@@ -27,7 +27,7 @@ public class Main
     private static void RenameFiles(String names[], File dir[])
     {
         for (int i = 0; i < names.length;i++) {
-            dir[i].renameTo(new File("/home/nelson/Documents/Books/programming/PacktPublishing/renamed/"+names[i]));
+            dir[i].renameTo(new File("/path/to/directory/"+names[i]));
         }
     }
 
